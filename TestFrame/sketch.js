@@ -6,11 +6,14 @@ function setup() {
   noSmooth();
 
   let params = getURLParams();
+ console.log(params);
 }
 
 function draw(){
 
 if (params.frame){
 save(cnv, 'myCanvas.jpg');
+} else {
+ console.log(params);
 }
 }
