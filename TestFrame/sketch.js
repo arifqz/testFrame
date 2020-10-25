@@ -7,7 +7,7 @@ function setup() {
 
   let params = getURL();
  console.log(params);
-  if(window.location.href.contains("?frame")) {
+  if(window.location.href.contains("?frame")> 0) {
   save(cnv, 'myCanvas.jpg');
 }
 }
