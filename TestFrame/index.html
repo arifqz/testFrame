@@ -45,7 +45,7 @@
 
             return ret;
         }, {});
-        console.log(new_value , key);
+        console.log(new_value , key +'parse');
     };
 
     queryString.stringify = function (obj) {
@@ -60,7 +60,7 @@
 
             return encodeURIComponent(key) + '=' + encodeURIComponent(val);
         }).join('&') : '';
-        console.log(new_value , key 'stringify');
+        console.log(new_value , key +'stringify');
     };
 
     queryString.push = function (key, new_value) {
@@ -68,7 +68,7 @@
     params[key] = new_value;
     var new_params_string = queryString.stringify(params)
     history.pushState({}, "", window.location.pathname + '?' + new_params_string);
-    console.log(new_value , key 'push');
+    console.log(new_value , key +'push');
   }
 
     if (typeof module !== 'undefined' && module.exports) {
