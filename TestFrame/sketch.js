@@ -4,16 +4,17 @@ function setup() {
   let cnv = createCanvas(720, 400);
   background(0);
   noSmooth();
+    const params = getURL();
+ console.log(params);
+  if(params.includes('?frame')) {
+  save(cnv, 'myCanvas.jpg');
+}
 
 
 }
 
 function draw(){
-   const params = getURL();
- console.log(params);
-  if(params.includes('?frame')) {
-  save(cnv, 'myCanvas.jpg');
-}
+
 
 }
 
