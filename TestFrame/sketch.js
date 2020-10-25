@@ -14,7 +14,7 @@ pauseSketch();
 }
 
 function pauseSketch() {
-  if (location.hash === '?frame') {
+  if (location.hash === '#?frame') {
     noLoop();
    console.log('pause sketch has run');
   }
