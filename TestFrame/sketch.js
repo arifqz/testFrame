@@ -7,7 +7,7 @@ function setup() {
 
   let params = getURL();
  console.log(params);
- if (params.includes('?frame') {
+ if (params.contains("Desktop") {
   save(cnv, 'myCanvas.jpg');
 }
 }
