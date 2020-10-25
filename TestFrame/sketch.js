@@ -18,3 +18,4 @@ function pauseSketch() {
     noLoop();
    console.log('pause sketch has run');
   }
+}
