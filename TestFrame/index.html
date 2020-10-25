@@ -10,7 +10,7 @@
     
     <script src="sketch.js"></script>
    <script type="text/javascript">
-     (function () {
+(function () {
     'use strict';
     var queryString = {};
 
@@ -61,9 +61,9 @@
         }).join('&') : '';
     };
 
-    queryString.push = function (frame, new_value) {
+    queryString.push = function (key, new_value) {
     var params = queryString.parse(location.search);
-    params[frame] = new_value;
+    params[key] = new_value;
     var new_params_string = queryString.stringify(params)
     history.pushState({}, "", window.location.pathname + '?' + new_params_string);
   }
@@ -73,8 +73,8 @@
     } else {
         window.queryString = queryString;
     }
+    console.log('this is running');
 })();
-    </script>
   </head>
 
   <body>
