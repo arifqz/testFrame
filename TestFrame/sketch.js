@@ -7,13 +7,10 @@ function setup() {
 
   let params = getURLParams();
  console.log(params);
+ text(params);
 }
 
 function draw(){
 
-if (params.frame){
-save(cnv, 'myCanvas.jpg');
-} else {
- console.log(params);
 }
 }
