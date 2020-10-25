@@ -5,9 +5,11 @@ function setup() {
   background(0);
   noSmooth();
 
-  let params = getURLParams();
+  let params = getURL();
  console.log(params);
- text(params);
+ if (params.includes('?frame') {
+  save(cnv, 'myCanvas.jpg');
+}
 }
 
 function draw(){
