@@ -5,9 +5,9 @@ function setup() {
   background(0);
   noSmooth();
 
-  let params = getURL();
+  const params = getURL();
  console.log(params);
-  if(window.location.href.contains("?frame")> 0) {
+  if(params.contains("?frame")> 0) {
   save(cnv, 'myCanvas.jpg');
 }
 }
