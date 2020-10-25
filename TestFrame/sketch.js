@@ -5,14 +5,15 @@ function setup() {
   background(0);
   noSmooth();
 
-  const params = getURL();
+
+}
+
+function draw(){
+   const params = getURL();
  console.log(params);
   if(params.includes('?frame')) {
   save(cnv, 'myCanvas.jpg');
 }
-}
-
-function draw(){
 
 }
 
