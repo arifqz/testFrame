@@ -13,7 +13,7 @@ function draw(){
 pauseSketch();
 }
 
-function pausesketch() {
+function pauseSketch() {
   if (location.hash === '?frame') {
     noLoop();
    console.log('pause sketch has run');
